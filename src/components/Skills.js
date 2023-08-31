@@ -1,6 +1,6 @@
 import { Container, Col, Row } from "react-bootstrap";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 import meter1 from "../assets/img/meter1.svg";
 import meter2 from "../assets/img/meter2.svg";
 import meter3 from "../assets/img/meter3.svg";
@@ -35,7 +35,7 @@ export const Skills = () => {
                             <h2>
                                 Skills
                             </h2>
-                            <p>Skill 1</p>
+                            <p>Here's some of what I can do</p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
                                     <img src={meter1} alt="" />
@@ -48,10 +48,6 @@ export const Skills = () => {
                                 <div className="item">
                                     <img src={meter3} alt="" />
                                     <h5>Logo Design</h5>
-                                </div>
-                                <div className="item">
-                                    <img src={meter1} alt="" />
-                                    <h5>Web Development</h5>
                                 </div>
                             </Carousel>
                         </div>
